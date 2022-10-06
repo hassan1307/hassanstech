@@ -1,0 +1,183 @@
+#front {
+    color: white;
+    display: grid;
+    place-content: center;
+    height: 80vh;
+    max-width: 90vw;
+    margin: 0 auto;
+    /* margin-bottom: 1rem; */
+    position: relative;
+    z-index: 1;
+    /* background: red; */
+}
+
+.main-head {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.welcome {
+    font-size: 1rem;
+    font-weight: 200px;
+    color: #00F5BC;
+    font-family: 'Merriweather', serif;
+}
+
+.name {
+    font-size: 5rem;
+    width: max-content;
+    font-family: 'Black Ops One', sans-serif;
+    font-weight: 100;
+}
+
+.typing {
+    color: white;
+    justify-content: center;
+    display: flex;
+    font-size: 1.6rem;
+    margin-bottom: 1.5rem;
+    color: #00F5BC
+}
+
+.intro {
+    display: flex;
+    justify-content: justify;
+    align-items: center;
+    text-align: center;
+    font-weight: 400;
+    max-width: 600px;
+    line-height: 1.6;
+    margin-top: 3rem;
+    margin: auto;
+    color: lightgray;
+    font-family: "Ms Modi", sans-serif;
+}
+
+.intro p {
+    font-size: 1.1rem !important;
+
+}
+
+.name {
+    font-weight: 8000;
+}
+
+
+
+.social {
+    display: flex;
+    justify-content: space-around;
+    max-width: 200px;
+    margin: auto;
+    margin-top: 1.8rem;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.icon {
+    margin-right: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+
+}
+
+.icon .text {
+    transition: all 0.7s;
+    position: absolute;
+    top: -30px;
+    width: max-content;
+    font-size: 0.7rem;
+    opacity: 0;
+    text-align: center;
+    background-color: rgba(120, 100, 100, 0.4);
+    transform: scale(0);
+    padding: 0.3rem;
+}
+
+.icon-image svg {
+    color: var(--main-color);
+}
+
+.icon:hover .text {
+    transform: translateY(-20px);
+    opacity: 1;
+    transform: scale(1);
+}
+
+.welcome,
+.name,
+.typing,
+.intro,
+.social {
+    z-index: 22;
+}
+
+@media only screen and (max-width:600px) {
+    #front {
+        height: 80vh;
+        z-index: 22;
+    }
+
+    .name {
+        font-size: 3rem;
+    }
+
+    .intro p {
+        color: lightgray;
+        font-size: 0.8rem !important;
+        margin-top: 0;
+    }
+       .social{
+        cursor: pointer;
+    }
+}
+
+
+
+@media only screen and (min-width:8500px) {
+    .name h1 {
+        font-size: 30rem;
+    }
+
+    .welcome h1 {
+        font-size: 10rem;
+    }
+
+    .typing {
+        font-size: 5rem;
+    }
+
+    .intro {
+        max-width: 60%;
+    }
+
+    .intro p {
+        font-size: 5rem !important;
+    }
+
+    .icon-image svg {
+        font-size: 7rem;
+        margin-right: 3rem;
+    }
+    .icon .text {
+        display: none;
+    }
+}
+
+@media only screen and (min-width:2500px){
+      .intro {
+        max-width: 70%;
+    }
+    .intro p {
+        font-size: 2rem !important;
+        width:100%;
+    }
+}

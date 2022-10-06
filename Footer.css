@@ -1,0 +1,41 @@
+
+svg{
+    font-size: 2rem;
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+}
+
+footer h1{
+    margin: 1rem;
+    font-size: 1.4rem;
+}
+
+
+footer h1{
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    animation: rocket 0.4s linear infinite alternate ;
+    transition: all 2s linear;
+    z-index: 99999;
+    cursor: pointer;
+    
+}
+footer h1 svg{
+    transform: rotateX(-50deg);
+}
+footer h1 img{
+    width: 50px;
+    height: 50px;
+    transform: rotate(-45deg);
+    opacity: 0;
+}
+@keyframes rocket {
+    0%{
+        transform: translateY(10px);
+    }100%{
+        transform: translateY(0px);
+    }
+}
+
+

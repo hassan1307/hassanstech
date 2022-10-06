@@ -1,0 +1,99 @@
+.show-cv {
+    height: 100vh;
+    transition: all 1s;
+    position: absolute;
+    width: 100vw;
+    opacity: 1;
+    background: #000;
+    scale: 1;
+    z-index: 23333;
+    position: relative;
+    display: grid;
+    place-content: center;
+}
+
+.cv-image {
+    display: grid;
+    place-content: center;
+    width: 100vw;
+    transition: all 1s;
+    height: 100%;
+    object-fit: contain;
+    position: relative;
+    
+}
+.download-btn svg{
+    margin: auto;
+    text-align: center;
+    cursor: pointer;
+}
+.cv-image img {
+    margin: auto;
+    transition: all 1s;
+    width: 70%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.hide-cv {
+    opacity: 0;
+    z-index: -11;
+    scale: 0;
+    transition: all 1s;
+    height: 0;
+}
+
+.button {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+}
+
+.button button{
+    background: transparent;
+    border:none;
+}
+
+.download-btn{
+    position: absolute;
+    bottom: 0rem;
+    transform: translate(-50%,-50%);
+    bottom: 0;
+    left: 50%;
+}
+.download-btn:hover svg{
+    color: green;
+}
+.download-btn button{
+    background: transparent;
+    border:none;
+    color:#fff;
+}
+.download-btn svg{
+    color:#fff
+}
+.download-btn svg:hover{
+    color: green;
+}   
+
+.button svg{
+    color:#fff;;
+    font-weight: 800;
+    font-size: 3rem;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+
+.button svg:hover{
+    color: red;
+    transform: rotateY(180deg);
+    
+}
+
+
+
+@media only screen and (max-width:600px) {
+.cv-image img{
+    width: 100%;
+}
+}

@@ -1,0 +1,195 @@
+#contact-form {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+
+
+}
+
+form {
+    width: 50%;
+    margin-top: 2rem;
+}
+
+.name {
+    width: 100%;
+}
+
+input,
+textarea {
+    padding: 0.9rem;
+    margin-bottom: 1rem;
+    width: 100%;
+    background: transparent;
+    border: 0.2px solid lightgray;
+    border-radius: 10px;
+    color: white;
+}
+
+.message {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+
+.message textarea {
+    width: 100%;
+}
+
+.send-btn {
+    display: flex;
+    justify-content: flex-end;
+    align-content: flex-end;
+    width: auto;
+    /* position:absolute; */
+    bottom: 20px;
+    right: 10px;
+}
+
+.send-btn svg {
+    font-size: 2rem;
+}
+
+.send {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.send button {
+    margin: auto;
+    width: 30%;
+}
+
+.loader svg {
+    width: 1rem;
+    height: 1rem;
+    text-align: center;
+    animation: loader 1s infinite;
+}
+
+@keyframes loader {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+
+}
+
+.sty {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 70%;
+    margin-bottom: "2rem"
+
+
+}
+
+.line {
+    font-size: 3rem;
+}
+
+.sty .line {
+    width: 200px;
+    margin-right: 1rem;
+}
+
+.send {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 10px;
+    animation: message 0.6s infinite alternate;
+}
+
+
+
+
+
+
+
+.send-msg button {
+    width: 100%;
+    background-color: #00ffd05e;
+}
+
+.send-msg svg {
+    margin: auto;
+    width: auto;
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    animation: loader 1s infinite;
+    color:var(--main-color);
+}
+
+.send-msg {
+    display: flex;
+}
+
+.send-msg input {
+    width: 100%;
+    background-color: var(--main-color);
+    border: none;
+    color: black;
+}
+
+input {
+    transition: all 0.4s;
+}
+
+input:focus {
+    box-shadow: 1px 1px 10px 2px var(--main-color);
+}
+
+textarea:focus {
+    box-shadow: 1px 1px 10px 2px var(--main-color);
+}
+
+@media only screen and (max-width:600px) {
+    #contact-form {
+        margin-top: 3rem;
+        height: 70vh;
+    }
+
+    form {
+        width: 100%;
+        padding: 0 2rem;
+    }
+
+}
+
+@media only screen and (min-width:8500px) {
+    input {
+        padding: 5rem;
+        margin-bottom: 5rem;
+    }
+
+    ::placeholder {
+        font-size: 4rem;
+    }
+
+    textarea {
+        height: 40vh;
+    }
+
+
+}
+
+@media only screen and (min-width:2500px){
+    
+    input{
+        padding:2rem;
+    }
+    ::placeholder{
+        font-size: 3rem;
+    }
+}

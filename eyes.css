@@ -1,0 +1,383 @@
+.iris svg {
+    color: gray;
+    width: 20px;
+    height: 20px;
+    /* position: fixed; */
+    z-index: -3333;
+    transition: all 1s;
+    opacity: 0.6;
+    animation: eyes 2s infinite alternate;
+    animation-delay: 10s;
+}
+
+.iris svg {}
+
+.iris-right svg {
+
+}
+
+@keyframes eyes {
+    0% {
+        color: gray;
+        transform: rotate(0deg);
+
+    }
+
+    50% {
+        transform: rotate(180deg);
+        color: var(--hover-color)
+    }
+
+    100% {
+        color: var(--main-color);
+        transform: rotate(360deg);
+
+    }
+}
+
+.iris:hover svg {
+    color: var(--main-color);
+}
+
+.react,
+.firebase,
+.tailwind,
+.css,
+.html,
+.gsap,
+.github,
+.github-left,
+.javascript,
+.react-right,
+.tailwind-right,
+.firebase-right,
+.css-right,
+.html-right,
+.gsap-right,
+.tailwind-right2,
+.javascript-top,
+.tailwind-top,
+.react-top,
+.firebase-top,
+.css-top,
+.html-top,
+.fireabse-bottom,
+.gsap-top,
+.javascript-right,
+.github-right .css-right2,
+.tailwind-bottom-right,
+.gsap-top-right,
+.github-right,
+.css-right2 {
+    position: fixed;
+}
+
+.react,
+.firebase,
+.tailwind,
+.css,
+.html,
+.github,
+.gsap svg {
+    color: gray;
+}
+
+.firebase-top {
+    top: 2%;
+    left: 25%;
+}
+
+.css-top {
+    bottom: 50%;
+    left: 5%;
+}
+
+.css-right2 {
+    bottom: 15%;
+    right: 15%;
+}
+
+.html-top {
+    top: 5%;
+    left: 50%;
+}
+
+.react-top {
+    top: 3%;
+    right: 20%;
+}
+
+.gsap-top-right {
+    top: 15%;
+    right: 4%;
+}
+
+.react {
+    left: 30%;
+    top: 15%;
+}
+
+.firebase {
+    left: 30%;
+    top: 50%;
+}
+
+.github {
+    right: 5%;
+    top: 40%
+}
+
+.github-right {
+    right: 25%;
+    top: 35%
+}
+
+.tailwind {
+    left: 1%;
+    top: 70%;
+}
+
+.github-left {
+    left: 50%;
+    top: 25%
+}
+
+.javascript-top {
+    left: 60%;
+    top: 5%
+}
+
+.css {
+    left: 10%;
+    top: 70%
+}
+
+.html {
+    right: 10%;
+    top: 60%;
+}
+
+.javascript {
+    right: 27%;
+    top: 18%
+}
+
+.javascript-right {
+    left: 50%;
+    bottom: 10%
+}
+
+.javascript-top {
+    top: 40%;
+    right: 40%;
+}
+
+.react-right {
+    top: 80%;
+    left: 30%
+}
+
+.tailwind-right {
+    top: 65%;
+    right: 30%
+}
+
+.tailwind-right2 {
+    top: 35%;
+    right: 25%
+}
+
+.tailwind-top {
+    top: 40%;
+    left: 10%;
+}
+
+.firebase-right {
+    top: 85%;
+    right: 10%
+}
+
+.tailwind-bottom-right {
+    top: 75%;
+    right: 20%
+}
+
+.css-right {
+    top: 95%;
+    right: 50%
+}
+
+.html-right {
+    top: 29%;
+    right: 78%
+}
+
+.gsap {
+    top: 45%;
+    right: 50%
+}
+
+.gsap-right {
+    top: 93%;
+    right: 25%
+}
+
+.gsap-top {
+    left: 5%;
+    top: 20%;
+}
+
+
+
+@media only screen and (max-width:600px) {
+    .iris svg {
+        z-index: -5555;
+
+    }
+
+    .firebase-top {
+        top: 2%;
+        left: 25%;
+    }
+
+    .css-top {
+        bottom: 50%;
+        left: 5%;
+    }
+
+    .css-right2 {
+        bottom: 15%;
+        right: 15%;
+    }
+
+    .html-top {
+        top: 5%;
+        left: 50%;
+    }
+
+    .react-top {
+        top: 3%;
+        right: 20%;
+    }
+
+    .gsap-top-right {
+        top: 15%;
+        right: 4%;
+    }
+
+    .react {
+        left: 30%;
+        top: 15%;
+    }
+
+    .firebase {
+        left: 30%;
+        top: 50%;
+    }
+
+    .github {
+        right: 5%;
+        top: 40%
+    }
+
+    .github-right {
+        right: 25%;
+        top: 5%
+    }
+
+    .tailwind {
+        left: 1%;
+        top: 70%;
+    }
+
+    .github-left {
+        left: 50%;
+        top: 25%
+    }
+
+    .javascript-top {
+        left: 30%;
+        top: 25%
+    }
+
+    .css {
+        left: 10%;
+        top: 70%
+    }
+
+    .html {
+        right: 10%;
+        top: 60%;
+    }
+
+    .javascript {
+        right: 27%;
+        top: 18%
+    }
+
+    .javascript-right {
+        left: 20%;
+        bottom: 5%
+    }
+
+    .javascript-top {
+        top: 40%;
+        right: 40%;
+    }
+
+    .react-right {
+        top: 80%;
+        left: 30%
+    }
+
+    .tailwind-right {
+        top: 65%;
+        right: 30%
+    }
+
+    .tailwind-right2 {
+        top: 35%;
+        right: 25%
+    }
+
+    .tailwind-top {
+        top: 40%;
+        left: 10%;
+    }
+
+    .firebase-right {
+        top: 85%;
+        left: 10%
+    }
+
+    .tailwind-bottom-right {
+        top: 75%;
+        right: 20%
+    }
+
+    .css-right {
+        top: 95%;
+        right: 50%
+    }
+
+    .html-right {
+        top: 29%;
+        right: 78%
+    }
+
+    .gsap {
+        top: 45%;
+        right: 50%
+    }
+
+    .gsap-right {
+        top: 93%;
+        right: 25%
+    }
+
+    .gsap-top {
+        left: 5%;
+        top: 20%;
+    }
+
+}
